@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Belvg_SmartyApplyCatalogRule>
+            <version>1.0.0</version>
+        </Belvg_SmartyApplyCatalogRule>
+    </modules>
+    <global>
+        <models>
+            <catalogrule>
+                <rewrite>
+                    <rule>Belvg_SmartyApplyCatalogRule_Model_Rule</rule>
+                </rewrite>
+            </catalogrule>
+        </models>
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Belvg_SmartyApplyCatalogRule before="Mage_Adminhtml">Belvg_SmartyApplyCatalogRule_Adminhtml</Belvg_SmartyApplyCatalogRule>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+</config>
